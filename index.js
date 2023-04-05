@@ -1,13 +1,13 @@
 const puppeteer = require('puppeteer');
 
-// Esta función retorna el precio del euro en pesos argentinos en su valor Venta
+// Retorna el precio del euro en pesos argentinos en su valor Venta
 (async () => {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
     await page.goto('https://www.infodolar.com/cotizacion-euro.aspx');
     await page.setViewport({width: 1080, height: 1024});
-    await page.screenshot({path: 'amazon1.jpg'});
+    await page.screenshot({path: './src/screenshot/infodolar.jpg'});
 
     // Seleccionamos este <td> document.querySelector("#CompraVenta > tbody > tr > td:nth-child(3)") y lo guardamos en una variable
     const td = await page.$("#CompraVenta > tbody > tr > td:nth-child(3)");
@@ -20,7 +20,7 @@ const puppeteer = require('puppeteer');
     }
 )();
 
-// Esta función ejecuta una busqueda en youtube y reproduce el video de Miley Cyrus - River 
+// Ejecuta una busqueda en youtube y reproduce el video de "Miley Cyrus - River ""
 (async () => {
     const browser = await puppeteer.launch( { headless: false, slowMo: 50 });
     const page = await browser.newPage();
@@ -41,4 +41,6 @@ const puppeteer = require('puppeteer');
     await browser.close();
     }
 )();
+
+//
     

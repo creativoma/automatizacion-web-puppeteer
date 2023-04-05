@@ -1,4 +1,24 @@
 {
+  "name": "automatizacion-web-puppeteer",
+  "description": "En este proyecto estoy probando la librería Puppeteer para automatizar tareas en el navegador. Estoy utilizando los diferentes métodos de la librería para automatizar la navegación por una página web, ejecutar acciones en el navegador y extraer información de la página.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativoma/automatizacion-web-puppeteer.git"
+  },
+  "keywords": [
+    "puppeteer", "automatizacion", "web", "navegador", "javascript", "nodejs", "node"
+  ],
+  "author": "Mariano Álvarez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creativoma/automatizacion-web-puppeteer/issues"
+  },
+  "homepage": "https://github.com/creativoma/automatizacion-web-puppeteer#readme",
   "dependencies": {
     "puppeteer": "^19.7.5"
   }
